@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <title>Sree Home Foods</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,36 +18,99 @@ margin:0;
 padding:40px;
 }
 
+/* LOGO */
+
 .logo{
-font-size:80px;
+font-size:50px;
 font-weight:bold;
-margin-top:40px;
+margin-top:20px;
 }
+
+/* TAGLINE */
 
 .tagline{
 font-size:22px;
 margin-top:10px;
-color:#ccc;
+color:#e0e0e0;
 }
 
+/* TEXT SECTION */
+
 .section{
-margin-top:60px;
-font-size:20px;
+margin-top:40px;
+font-size:18px;
 max-width:700px;
 margin-left:auto;
 margin-right:auto;
-line-height:1.6;
+line-height:1.7;
 }
 
-button{
-margin-top:30px;
-padding:15px 30px;
+/* BUTTONS */
+
+.button{
+display:block;
+width:250px;
+margin:20px auto;
+padding:15px;
 font-size:18px;
 border:none;
-background:#015729;
-color:black;
-border-radius:10px;
+border-radius:8px;
 cursor:pointer;
+font-weight:bold;
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+}
+
+.instagram{
+background:#E1306C;
+color:white;
+}
+
+/* FOOD IMAGES */
+
+.corner-img{
+position:fixed;
+width:120px;
+height:auto;
+z-index:0;
+opacity:0.9;
+}
+
+.top-left{
+top:10px;
+left:10px;
+}
+
+.top-right{
+top:10px;
+right:10px;
+}
+
+.bottom-left{
+bottom:10px;
+left:10px;
+}
+
+.bottom-right{
+bottom:10px;
+right:10px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+.corner-img{
+width:90px;
+}
+
+.logo{
+font-size:40px;
+}
+
 }
 
 </style>
@@ -54,29 +119,47 @@ cursor:pointer;
 
 <body>
 
+<!-- FOOD IMAGES -->
+
+<img src="idli.png" class="corner-img top-left">
+<img src="meals.png" class="corner-img top-right">
+<img src="poori.png" class="corner-img bottom-left">
+<img src="vada.png" class="corner-img bottom-right">
+
+<!-- TITLE -->
+
 <div class="logo">Sree Home Foods</div>
 
 <div class="tagline">
-Pure Home Food
+Pure • Homemade • Healthy
 </div>
 
 <div class="section">
 
 <p>Welcome to <b>Sree Home Foods</b></p>
 
-<p>The food we make is 100% restricted from food colors, essence, palm oil, tasting salts, baking soda, and Maida.</p>
+<p>The food we prepare is strictly free from food colors, essence, palm oil, tasting salts, baking soda and maida.</p>
 
-<p>We carefully handcrafted the recipe to give you healthy, tasty and hygienic food.</p>
+<p>Every recipe is carefully handcrafted to deliver healthy, hygienic and delicious homemade food.</p>
 
-<p>Contact 8328648057 for any food order. We undertake orders starting from as low as 20 to 1000 members</p>
+<p>We undertake bulk orders starting from <b>20 members up to 1000 members</b>.</p>
 
-<p>Thank you for scanning our box and being part of Sree Home Foods. Looking forward to serving you and your beloved ones.</p>
+<p>Thank you for scanning our box and being part of the Sree Home Foods family.</p>
 
 </div>
 
-<button onclick="alert('Follow us on Instagram!')">
-sree.home.foods
+<!-- BUTTONS -->
+
+<button class="button whatsapp"
+onclick="window.location.href='https://wa.me/918328648057'">
+Order on WhatsApp
+</button>
+
+<button class="button instagram"
+onclick="window.location.href='https://instagram.com/sree.home.foods'">
+Follow on Instagram
 </button>
 
 </body>
+
 </html>
